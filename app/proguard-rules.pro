@@ -1,0 +1,3 @@
+-keep class com.wormgpt.** { *; }
+-dontwarn okhttp3.**
+-dontwarn okio.**

@@ -3,21 +3,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#0A0A0A">
+    android:background="#000000">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#111111"
-        android:padding="16dp">
+        android:background="#0A0000"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="WormGPT"
-            android:textColor="#00FF41"
-            android:textSize="20sp"
+            android:textColor="#FF0040"
+            android:textSize="22sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙"
+            android:textSize="20sp"
+            android:background="#1A0000"
+            android:textColor="#FF0040" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF0040" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -35,24 +53,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#111111"
-        android:padding="8dp">
+        android:background="#0A0000"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
         <EditText
             android:id="@+id/inputField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Type message..."
-            android:textColorHint="#666"
-            android:textColor="#FFF"
-            android:background="#1A1A1A"
+            android:hint="اكتب رسالتك..."
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:background="#1A0000"
             android:padding="12dp" />
+
         <ImageButton
             android:id="@+id/sendBtn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@android:drawable/ic_menu_send"
-            android:background="#00FF41"
+            android:background="#FF0040"
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
